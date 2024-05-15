@@ -1,0 +1,138 @@
+/* Paleta de Cores */
+body {
+    background-color: #EBD3FF;
+    color: #0D0D0D;
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    color: #EBD3FF;
+}
+
+/* Estrutura Textual */
+body {
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+p {
+    text-indent: 1em;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.intro {
+    text-align: right;
+}
+
+.main {
+    text-align: center;
+    line-height: 1.5;
+}
+
+abbr {
+    font-variant: small-caps;
+}
+
+/* Box Model */
+body {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.intro {
+    max-height: 550px;
+}
+
+header {
+    background: #0D0D0D;
+    color: #EBD3FF;
+    padding: 20px;
+}
+
+header h1 {
+    margin-right: 1em;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #0D0D0D;
+    color: #EBD3FF;
+    padding: 20px 0;
+    display: flex; 
+    justify-content: center; /* Centraliza os links horizontalmente */
+    gap: 20px; /* Adiciona espaçamento entre os links */
+    flex-wrap: wrap; /* Permite a quebra de linha */
+}
+
+.footer a {
+    border: 2px solid #EBD3FF;
+    background-color: #6c03c2; 
+    color: #0D0D0D; 
+    padding: 10px;
+    flex: 0 0 150px; /* Define um mesmo tamanho para os links */
+    text-align: center; /* Centraliza o texto dentro dos links */
+    margin-bottom: 10px; /* Adiciona espaçamento entre as linhas de links */
+}
+.participation-section {
+    display: flex; /* Ativa o flex container */
+    justify-content: space-between; /* Distribui os itens uniformemente ao longo do eixo principal */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+.participation-section .participation-item {
+    flex: 1; /* Cada item ocupa 50% do espaço disponível */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+/* Benefícios e Participação */
+.benefits-section,
+.participation-section {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #000; /* Adiciona a linha superior e inferior */
+}
+
+.benefits-section h3,
+.participation-section h3 {
+    margin: 0;
+}
+
+.benefit,
+.participation-item {
+    display: flex;
+    justify-content: space-between; /* Coloca o texto à esquerda e o título à direita */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.benefit p {
+    flex: 0 0 70%;
+    text-align: left; 
+}
+
+.benefit h3,
+.participation-item h3 {
+    flex: 0 0 30%;
+    text-align: right;
+}
