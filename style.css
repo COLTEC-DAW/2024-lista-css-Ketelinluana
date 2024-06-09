@@ -1,37 +1,32 @@
 body {
-  background-color: #A6A6A6;
+  background-color: #EBD3FF;
   color: #0D0D0D;
-  width: 80%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-.page-wrapper {
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-.intro {
-  background-color: #D9D9D9;
-  height: 550px;
-  text-align: right;
+.highlight {
+  color: #EBD3FF;
 }
 
-#design-archives {
-  position: absolute;
-  top: 560px;
-  left: calc(62% + 2%);
-  padding: 0 2%;
+body {
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
-.explanation {
-  width: 60%;
-  margin-right: 35%;
-  border-right: 1px solid #1f295c;
-  padding-right: 2%;
+p {
+  text-indent: 1em;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 0;
 }
 
 h1 {
   font-size: 1.8rem;
-  margin-left: 1em;
 }
 
 h2 {
@@ -42,8 +37,11 @@ h3 {
   font-size: 1.2rem;
 }
 
+.intro {
+  text-align: right;
+}
+
 .main {
-  text-align: center;
   line-height: 1.5;
 }
 
@@ -51,73 +49,222 @@ abbr {
   font-variant: small-caps;
 }
 
-header {
-  background-color: #0D0D0D;
-  color: #FFFFFF;
-  padding: 1em;
+body {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-h1, h2 {
+.intro {
+  max-height: 550px;
+}
+
+header {
+  background: #0D0D0D;
+  color: #EBD3FF;
+  padding: 20px;
+}
+
+header h1 {
+  margin-right: 1em;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
   display: inline-block;
   margin-right: 1em;
 }
 
-nav ul {
-  list-style-type: none;
-  padding-left: 0;
+.footer {
+  background-color: #0D0D0D;
+  color: #EBD3FF;
+  padding: 20px 0;
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  position: relative;
 }
 
-nav li {
-  margin-bottom: 1em;
-  text-align: center;
+.footer a {
+  border: 2px solid #EBD3FF;
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: #EBD3FF; 
+  color: #0D0D0D; 
+  flex: 0 0 150px; 
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.benefits-section,
+.participation-section {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.benefits-section h3,
+.participation-section h3 {
+  margin: 0;
+}
+
+.benefits-section {
+  border-bottom: 1px solid #000;
+}
+
+.participation-section {
+  border-top: 1px solid #000;
+}
+
+.page-wrapper {
+  position: relative;
+}
+
+.explanation {
+  width: 60%;
+  margin-right: 35%;
+  border-right: 1px solid #010205;
+  padding-right: 2%;
+  padding: 70px 2%;
+}
+
+.design-menu {
+  position: absolute;
+  top: 560px;
+  left: 62%;
+  width: 35%;
+  padding: 20px 2%;
+}
+
+a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a101db;
+}
+
+a:visited {
+  font-weight: normal;
+}
+
+.main-content p:first-of-type:first-letter {
+  font-size: 300%;
+  float: left;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.design-menu li {
+  border-top: 2px solid #000;
+}
+
+.design-menu li:last-child {
+  border-bottom: 2px solid #000;
+}
+
+.benefits-section .benefit {
+  display: flex;
+}
+
+.benefit p {
+  flex: 0 0 70%;
+  text-align: left; 
+}
+
+.benefit h3 {
+  flex: 0 0 30%;
+  text-align: right;
+  align-self: center;
+}
+
+.participation-section .participation-item {
+  display: flex;
+  flex: 1 1 50%;
+  justify-content: center; 
+}
+
+.participation-item h3 {
+  align-self: center;
+}
+
+.participation-section {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.participation-section .participation-item {
+  flex: 1; 
+  text-align: center; 
+}
+
+.wrapper {
+  position: absolute;
+  top: 350px; 
+  left: 800px; 
+  font-size: 15px;
+  padding: 1px;
 }
 
 footer {
-  background-color: #FFFFFF;
-  color: #0D0D0D;
-  margin-top: 4%;
-  padding: 1em;
-}
-
-footer a {
-  display: inline-block;
-  border: 2px solid #0D0D0D;
-  padding: 0.5em;
-  text-decoration: none;
-  color: #0D0D0D;
-}
-
-footer a:hover {
-  background-color: #0D0D0D;
-  color: #FFFFFF;
-}
-
-header h1, header h2 {
-  margin-right: 1em;
-}
-
-nav li {
-  margin-bottom: 1em;
   text-align: center;
 }
 
-nav ul {
-  padding-left: 0;
+.preamble p:first-of-type::first-letter {
+  font-size: 300%;
+  font-family: 'Times New Roman', Times, serif;
+  float: left;
 }
 
-nav li {
-  list-style-type: none;
-  margin-bottom: 1em;
-  text-align: center;
+/* Aplicar o Flexbox no rodapé da seção principal */
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-nav a {
-  display: block;
-  padding: 1em;
-  text-decoration: none;
-  color: #FFFFFF;
+.footer a {
+  flex: 0 0 auto;
 }
 
-nav a:hover {
-  background-color: #0D0D0D;
+/* Configurar o layout de flexbox para a seção de benefícios */
+.benefits-section {
+  display: flex;
+  align-items: center;
+}
+
+.benefit p {
+  flex: 0 0 70%;
+}
+
+.benefit h3 {
+  flex: 0 0 30%;
+  text-align: right;
+  align-self: center;
+}
+
+/* Configurar o layout de flexbox para a seção de participação */
+.participation-section .participation-item {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Incluir linhas no topo e na parte inferior das seções de participação e benefícios */
+.benefits-section {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.participation-section {
+  border-top: none;
+  border-bottom: 1px solid #000;
 }
