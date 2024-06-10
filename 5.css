@@ -42,13 +42,13 @@ h3 {
 }
 
 .main {
-  text-align: center;
   line-height: 1.5;
 }
 
 abbr {
   font-variant: small-caps;
 }
+
 
 body {
   width: 80%;
@@ -97,6 +97,7 @@ header h1 {
   background-color: #EBD3FF; 
   color: #0D0D0D; 
   flex: 0 0 150px; 
+
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -121,6 +122,7 @@ header h1 {
   border-top: 1px solid #000;
 }
 
+
 .page-wrapper {
   position: relative;
 }
@@ -135,7 +137,7 @@ header h1 {
 
 .design-menu {
   position: absolute;
-  top: 500px;
+  top: 560px;
   left: 62%;
   width: 35%;
   padding: 20px 2%;
@@ -169,6 +171,7 @@ a:visited {
   border-bottom: 2px solid #000;
 }
 
+
 .benefits-section .benefit {
   display: flex;
 }
@@ -193,116 +196,24 @@ a:visited {
 .participation-item h3 {
   align-self: center;
 }
-
 .participation-section {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center;
+  display: flex; /* Ativa o flex container */
+  justify-content: space-between; /* Distribui os itens uniformemente ao longo do eixo principal */
+  align-items: center; /* Centraliza verticalmente os itens */
 }
 
 .participation-section .participation-item {
-  flex: 1; 
-  text-align: center; 
+  flex: 1; /* Cada item ocupa 50% do espaço disponível */
+  text-align: center; /* Centraliza o texto horizontalmente */
 }
 
-.wrapper {
-  position: absolute;
-  top: 350px; 
-  left: 800px; 
+.wrapper{
+  position: absolute; /* Define a posição absoluta */
+  top: 350px; /* Define a distância do topo da página */
+  left: 800px; /* Define a distância da esquerda da página */
   font-size: 15px;
   padding: 1px;
 }
-
-footer {
+footer{
   text-align: center;
-}
-
-.preamble p:first-of-type::first-letter {
-  font-size: 300%;
-  font-family: 'Times New Roman', Times, serif;
-  float: left;
-}
-
-/* Aplicar o Flexbox no rodapé da seção principal */
-.footer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.footer a {
-  flex: 0 0 auto;
-}
-
-/* Configurar o layout de flexbox para a seção de benefícios */
-.benefits-section {
-  display: flex;
-  align-items: center;
-}
-
-.benefit p {
-  flex: 0 0 70%;
-}
-
-.benefit h3 {
-  flex: 0 0 30%;
-  text-align: right;
-  align-self: center;
-}
-
-/* Configurar o layout de flexbox para a seção de participação */
-.participation-section .participation-item {
-  flex: 1 1 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Incluir linhas no topo e na parte inferior das seções de participação e benefícios */
-.benefits-section {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-}
-
-.participation-section {
-  border-top: none;
-  border-bottom: 1px solid #000;
-}
-
-/* Layout mobile */
-@media screen and (max-width: 768px) {
-  .design-menu {
-    position: static;
-  }
-
-  .explanation {
-    border-right: none;
-  }
-
-  .participation-section .participation-item {
-    flex-direction: column;
-  }
-
-  header {
-    max-height: none;
-  }
-
-  p {
-    margin-top: 0;
-  }
-}
-
-/* Mídia de impressão */
-@media print {
-  body {
-    font-family: 'Times New Roman', Times, serif;
-    color: #0D0D0D;
-    background-color: #EBD3FF;
-  }
-
-  header, .footer {
-    background-color: #EBD3FF;
-    color: #0D0D0D;
-  }
 }
