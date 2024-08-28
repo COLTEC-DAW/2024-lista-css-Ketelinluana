@@ -251,7 +251,6 @@ footer {
   align-self: center;
 }
 
-/* Configurar o layout de flexbox para a seção de participação */
 .participation-section .participation-item {
   flex: 1 1 50%;
   display: flex;
@@ -259,7 +258,6 @@ footer {
   align-items: center;
 }
 
-/* Incluir linhas no topo e na parte inferior das seções de participação e benefícios */
 .benefits-section {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -270,7 +268,6 @@ footer {
   border-bottom: 1px solid #000;
 }
 
-/* Layout mobile */
 @media screen and (max-width: 768px) {
   .design-menu {
     position: static;
@@ -293,7 +290,6 @@ footer {
   }
 }
 
-/* Mídia de impressão */
 @media print {
   body {
     font-family: 'Times New Roman', Times, serif;
